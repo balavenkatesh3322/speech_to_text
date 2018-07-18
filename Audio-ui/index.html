@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>NLP Demo</title>
+  <meta name="viewport" content="width=868">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Roboto:400'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/node-waves/0.7.5/waves.min.css'>
+<link rel='stylesheet prefetch' href='https://michael-zhigulin.github.io/mz-codepen-projects/Material%20Design%20UI%20Audio%20Player/font/font.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <div class="container">
+  <div class="player">
+    <div class="like waves-effect waves-light">     
+    </div>
+    <div class="mask"> <p style="margin-left: 2%"><span class="pointer" id=4.4>hello</span> <span class="pointer" id=6.4>thank</span> <span class="pointer" id=9.6>God</span> <span class="pointer" id=9.9>I'm</span> <span class="pointer" id=10.4>glad</span> <span class="pointer" id=10.5>to</span> <span class="pointer" id=10.7>see</span> <span class="pointer" id=10.8>you</span> <span class="pointer" id=11.0>all</span> <span class="pointer" id=18.5>I</span> <span class="pointer" id=18.7>feel</span> <span class="pointer" id=19.5>like</span> <span class="pointer" id=19.6>I</span> <span class="pointer" id=20.0>have</span> <span class="pointer" id=21.4>disc</span> <span class="pointer" id=22.6>or</span> <span class="pointer" id=22.7>something</span> <span class="pointer" id=23.1>in</span> <span class="pointer" id=23.3>my</span> <span class="pointer" id=23.4>back</span> <span class="pointer" id=23.9>it's</span> <span class="pointer" id=27.3>the</span> <span class="pointer" id=27.5>craziest</span> <span class="pointer" id=28.0>thing</span> <span class="pointer" id=29.5>and</span> <span class="pointer" id=29.9>what</span> <span class="pointer" id=30.2>makes</span> <span class="pointer" id=30.4>you</span> <span class="pointer" id=30.6>think</span> <span class="pointer" id=30.7>that</span> <span class="pointer" id=31.9>well</span> <span class="pointer" id=32.5>I</span> <span class="pointer" id=32.7>ate</span> <span class="pointer" id=33.2>two</span> <span class="pointer" id=34.5>days</span> <span class="pointer" id=34.7>ago</span> <span class="pointer" id=34.9>I</span> <span class="pointer" id=35.5>was</span> <span class="pointer" id=35.7>helping</span> <span class="pointer" id=36.1>a</span> <span class="pointer" id=36.1>buddy</span> <span class="pointer" id=36.3>move</span> <span class="pointer" id=36.5>and</span> <span class="pointer" id=39.6>and</span> <span class="pointer" id=40.4>I</span> <span class="pointer" id=40.5>was</span> <span class="pointer" id=40.6>I</span> <span class="pointer" id=41.0>was</span> <span class="pointer" id=41.2>working</span> <span class="pointer" id=41.5>a</span> <span class="pointer" id=41.6>lot</span> <span class="pointer" id=41.6>of</span> <span class="pointer" id=41.9>heavy</span> <span class="pointer" id=42.0>boxes</span> <span class="pointer" id=42.4>one</span> <span class="pointer" id=43.2>of</span> <span class="pointer" id=43.3>the</span> <span class="pointer" id=43.4>time</span> <span class="pointer" id=43.7>when</span> <span class="pointer" id=44.0>I</span> <span class="pointer" id=44.1>come</span> <span class="pointer" id=44.2>down</span> <span class="pointer" id=44.5>all</span> <span class="pointer" id=46.0>the</span> <span class="pointer" id=46.1>sudden</span> <span class="pointer" id=46.4>I</span> <span class="pointer" id=46.5>felt</span> <span class="pointer" id=46.9>sorry</span> <span class="pointer" id=47.1>that</span> <span class="pointer" id=50.3>went</span> <span class="pointer" id=50.7>down</span> <span class="pointer" id=50.9>my</span> <span class="pointer" id=51.5>left</span> <span class="pointer" id=51.7>leg</span> <span class="pointer" id=51.9>all</span> <span class="pointer" id=52.5>the</span> <span class="pointer" id=52.6>way</span> <span class="pointer" id=52.7>down</span> <span class="pointer" id=53.0>the</span> <span class="pointer" id=53.1>back</span> <span class="pointer" id=53.4>of</span> <span class="pointer" id=53.5>my</span> <span class="pointer" id=53.6>leg</span> <span class="pointer" id=53.9>and</span> <span class="pointer" id=54.0>into</span> <span class="pointer" id=54.2>my</span> <span class="pointer" id=54.3>foot</span> <span class="pointer" id=54.6>felt</span> <span class="pointer" id=55.0>like</span> <span class="pointer" id=55.2>fire</span> <span class="pointer" id=56.4>electricity</span> <span class="pointer" id=58.0>or</span> <span class="pointer" id=58.1>something</span> <span class="pointer" id=58.5>else</span></p></div>
+    <ul class="player-info info-one">
+      <li>Natural Language Processing</li>
+      <li>Demo</li>
+      <li>1:00</li>
+    </ul>
+<!--     <ul class="player-info info-two">
+      <li>Living matrix</li>
+      <li>Demo</li>
+      <li><span id="duration"></span><i> / </i>1:00</li>
+    </ul> -->    
+    <div id="play-button" class="unchecked">
+      <i class="icon icon-play"></i>
+    </div>
+    <div class="control-row">
+      <div class="waves-animation-one"></div>
+      <div class="waves-animation-two"></div>
+      <div id="pause-button">
+        <i class="icon"></i>
+      </div>
+      <div class="seek-field">
+        <input id="audioSeekBar" min="0" max="334" step="1" value="0" type="range" oninput="audioSeekBar()" onchange="this.oninput()">
+      </div>
+      <div class="volume-icon">
+        <i class="icon-volume-up"></i>
+      </div>
+      <div class="volume-field">
+        <input type="range" min="0" max="100" value="100" step="1" oninput="audio.volume = this.value/100" onchange="this.oninput()">
+      </div>
+    </div>
+  </div>
+</div>
+
+<audio id="audio-player" ontimeupdate="SeekBar()" ondurationchange="CreateSeekBar()" preload="auto" loop>
+  <source src="BackPain_time_compress.flac" type="audio/flac">
+      <source src="Backpain_time.mp3" type="audio/mpeg">
+</audio>
+
+
+
+  <script src='https://code.jquery.com/jquery-2.1.1.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/node-waves/0.7.5/waves.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
